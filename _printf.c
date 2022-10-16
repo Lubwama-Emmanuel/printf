@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdarg.h>
-#include <string.h>
+#include "main.h"
 
 /**
  * _printf - variadic function that works as printf
