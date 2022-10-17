@@ -10,9 +10,11 @@
 int _printf(const char *format, ...)
 {
 	int j = 0, i = 0;
-	char buff[1024], char *s;
+	char buff[1024];
+	char *s;
 
-	va_list ap, va_start(ap, format);
+	va_list(ap);
+	va_start(ap, format);
 
 	while (format && format[i])
 	{
@@ -44,5 +46,6 @@ int _printf(const char *format, ...)
 		i++;
 	}
 	fwrite(buff,  j, 1, stdout);
-	va_end(ap), return (hj);
+	va_end(ap);
+	return (j);
 }
