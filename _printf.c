@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int j = 0, i = 0;
-	char buff[100];
+	char buff[1024];
 	char *s;
 
 	va_list(ap);
