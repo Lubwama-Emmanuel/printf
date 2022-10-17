@@ -14,11 +14,6 @@ int _printf(const char *format, ...)
 
 	va_list ap, va_start(ap, format);
 
-	if (!format || (format[i] == '%' && !format[i + 1]))
-		return (-1);
-	if (!format[i])
-		return (0);
-
 	while (format && format[i])
 	{
 		if (format[i] == '%')
@@ -45,7 +40,8 @@ int _printf(const char *format, ...)
 		{
 			buff[j] = format[i];
 			j++;
-		} i++;
+		}
+		i++;
 	}
 	fwrite(buff,  j, 1, stdout);
 	va_end(ap), return (hj);
