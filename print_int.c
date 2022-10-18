@@ -26,10 +26,12 @@ int print_int(va_list arguments, char *buf, unsigned int ibuf)
 	{
 		i = input;
 	}
+	tmp = i;
 	div = 1;
-	for (tmp = i; tmp > 9; tmp /= 10)
+	while (tmp > 9)
 	{
 		div *= 10;
+		tmp /= 10;
 	}
 	for (j = 0; div > 0; div /= 10, j++)
 	{
