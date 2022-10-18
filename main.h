@@ -21,5 +21,9 @@ int ev_print_func(const char *s, int index);
 unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
 int print_buf(char *buf, unsigned int nbuf);
 int print_ctb(va_list arguments, char *buf, unsigned int ibuf);
-
+char *binary_array(char *bin, long int input, int isneg, int limit);
+char *oct_array(char *bin, char *oct);
+char *short_oct_array(char *bin, char *oct);
+char *long_oct_array(char *bin, char *oct);
+char *hex_array(char *bin, char *hex, int isupp, int limit);
 #endif
