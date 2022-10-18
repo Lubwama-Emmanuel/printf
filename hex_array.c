@@ -21,8 +21,8 @@ char *hex_array(char *bin, char *hex, int isupp, int limit)
 
 	while (i >= 0)
 	{
-		for (op = 0; j = 1; j <= 8; j *= 2, i--)
-			op = ((bnr[i] - '0') * j) + op;
+		for (op = 0, j = 1; j <= 8; j *= 2, i--)
+			op = ((bin[i] - '0') * j) + op;
 		i++;
 		if (op < 10)
 			hex[i / 4] = op + 48;
