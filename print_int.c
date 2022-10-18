@@ -37,5 +37,5 @@ int print_int(va_list arguments, char *buf, unsigned int ibuf)
 	{
 		ibuf = handl_buf(buf, ((i / div) % 10) + 48, ibuf);
 	}
-	return (i + isneg);
+	return (j + isneg);
 }
