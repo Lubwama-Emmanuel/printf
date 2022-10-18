@@ -13,6 +13,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"%", print_prg},
 		{"b", print_ctb},
 		{"S", print_us},
+		{"p", print_addr},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
