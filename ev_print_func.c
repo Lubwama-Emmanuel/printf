@@ -12,6 +12,7 @@ int ev_print_func(const char *s, int index)
 		{"s", print_str},
 		{"%", print_prg},
 		{"b", print_ctb},
+		{"S", print_us},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
