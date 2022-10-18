@@ -11,6 +11,7 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"c", print_chr},
 		{"s", print_str},
 		{"%", print_prg},
+		{"b", print_ctb},
 		{NULL, NULL},
 	};
 	int i = 0, j = 0, first_index;
