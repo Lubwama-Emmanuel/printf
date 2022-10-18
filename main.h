@@ -16,7 +16,7 @@ int _printf(const char *format, ...);
 int print_prg(va_list __attribute__((unused)), char *, unsigned int);
 int print_chr(va_list arguments, char *buf, unsigned int ibuf);
 int print_str(va_list arguments, char *buf, unsigned int ibuf);
-int print_int(va_list arguments, char *buf, unsignedint ibuf);
+int print_int(va_list arguments, char *buf, unsigned int ibuf);
 int print_us(va_list arguments, char *buf, unsigned int ibuf);
 int print_addr(va_list arguments, char *buf, unsigned int ibuf);
 int print_rv(va_list arguments, char *buf, unsigned int ibuf);
