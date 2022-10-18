@@ -3,7 +3,7 @@
 /**
  * output_array - outputs binary array.
  * @bin: pointer to bin
- * @input; number to convert
+ * @input: number to convert
  * @isneg: if input is negative.
  * @limit: size of the bin
  * Return: number of characters.
@@ -34,7 +34,7 @@ char *output_array(char *bin, long int input, int isneg, int limit)
 				bin[i] = '0';
 	}
 	return (bin);
-}	
+}
 
 /**
  * print_ctb - Converts int to binary.
