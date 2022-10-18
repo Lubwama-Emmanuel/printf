@@ -18,7 +18,7 @@ int print_rv(va_list arguments, char *buf, unsigned int ibuf)
 	if (str == NULL)
 	{
 		for (i = 0; nil[i]; i++)
-			ibuf = handl_buf(buf, nill[i], ibuf);
+			ibuf = handl_buf(buf, nil[i], ibuf);
 		return (6);
 	}
 	for (i = 0; str[i]; i++)
