@@ -26,9 +26,9 @@ int print_upx(va_list arguments, char *buf, unsigned int ibuf)
 		isneg = 1;
 	}
 	bin = malloc(sizeof(char) * (32 + 1));
-	bin = fill_binary_array(bin, input, isneg, 32);
+	bin = binary_array(bin, input, isneg, 32);
 	hexa = malloc(sizeof(char) * (8 + 1));
-	hexa = fill_hex_array(bin, hexa, 1, 8);
+	hexa = hex_array(bin, hexa, 1, 8);
 	for (dig = i = count = 0; hexa[i]; i++)
 	{
 		if (hexa[i] != '0' && dig == 0)

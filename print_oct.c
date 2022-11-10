@@ -25,9 +25,9 @@ int print_oct(va_list arguments, char *buf, unsigned int ibuf)
 		isneg = 1;
 	}
 	bin = malloc(sizeof(char) * (32 + 1));
-	bin = fill_binary_array(bin, input, isneg, 32);
+	bin = binary_array(bin, input, isneg, 32);
 	oct = malloc(sizeof(char) * (11 + 1));
-	oct = fill_oct_array(bin, oct);
+	oct = oct_array(bin, oct);
 	for (dig = i = count = 0; oct[i]; i++)
 	{
 		if (oct[i] != '0' && dig == 0)
