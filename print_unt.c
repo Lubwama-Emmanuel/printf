@@ -12,12 +12,12 @@ int print_unt(va_list arguments, char *buf, unsigned int ibuf)
 	unsigned int int_in, tmp, i, div;
 
 	int_in = va_arg(arguments, unsigned int);
-	temp = int_in;
+	tmp = int_in;
 	div = 1;
-	while (temp > 9)
+	while (tmp > 9)
 	{
 		div *= 10;
-		temp /= 10;
+		tmp /= 10;
 	}
 	for (i = 0; div > 0; div /= 10, i++)
 	{
