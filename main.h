@@ -31,4 +31,8 @@ char *oct_array(char *bin, char *oct);
 char *short_oct_array(char *bin, char *oct);
 char *long_oct_array(char *bin, char *oct);
 char *hex_array(char *bin, char *hex, int isupp, int limit);
+int print_hex(va_list arguments, char *buf, unsigned int ibuf);
+int print_unt(va_list arguments, char *buf, unsigned int ibuf);
+int print_upx(va_list arguments, char *buf, unsigned int ibuf);
+int print_oct(va_list arguments, char *buf, unsigned int ibuf);
 #endif

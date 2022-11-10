@@ -8,10 +8,10 @@
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 {
 	print_t pr[] = {
-		{"c", print_chr},
-		{"s", print_str},
-		{"%", print_prg},
-		{"b", print_ctb},
+		{"c", print_chr}, {"u", print_unt},
+		{"s", print_str}, {"o", print_oct},
+		{"%", print_prg}, {"x", print_hex},
+		{"b", print_ctb}, {"X", print_upx},
 		{"S", print_us},
 		{"p", print_addr},
 		{"r", print_rv},
